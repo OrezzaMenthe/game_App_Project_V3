@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/peperomia_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="47dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/peperomiaobtusfolia"
+
+        android:cropToPadding="true"
+        android:elevation="14dp"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hey_urvashi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/hey_urvashi"
+        android:textAppearance="@style/HeyUrvashiStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peperomia_o"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+
+        android:layout_marginTop="1dp"
+        android:text="@string/help_us_to_"
+        android:textAppearance="@style/help_us_to_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hey_urvashi" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="70dp"
+        android:clipToOutline="true"
+        android:src="@drawable/_6_notification"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ellipse_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="70dp"
+        android:clipToOutline="true"
+        android:src="@drawable/ellipse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="331dp"
+        android:layout_marginTop="70dp"
+
+        android:clipToOutline="true"
+        android:src="@drawable/_4_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+
+        android:layout_marginTop="168dp"
+
+        android:background="@drawable/rectangle_v1"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/button"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rounded_button_1"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="6dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <TextView
+        android:id="@+id/texte_boutton_haut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Houseplants"
+        android:textAppearance="@style/houseplant"
+
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        android:elevation="10dp"
+        />
+
+    <Button
+        android:id="@+id/button_transparent_0"
+        android:layout_width="112dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
+        android:elevation="18dp"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="107dp"
+        android:layout_height="18dp"
+
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="14dp"
+
+        android:text="Evergren Trees"
+        android:textAppearance="@style/evergreen"
+
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:text="Palm Tree"
+        android:textAppearance="@style/evergreen"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
+
+    <!-- PLANTE NUMERO 1 -->
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="16dp"
+
+        android:id="@+id/rectangle_plante_1"
+        android:layout_width="160dp"
+        android:layout_height="242dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="280dp"
+
+        android:background="@drawable/plante_1"
+
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/plante_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="225dp"
+
+        android:background="@drawable/houseplantpeperomia"
+        android:elevation="20dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_plante_1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="192dp"
+
+        android:elevation="20dp"
+        android:text="Pepermonia \nHouseplant"
+
+
+        android:textAppearance="@style/texte_boutton_plante"
+
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_plante_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_1"
+        />
+
+    <View
+        android:id="@+id/Button_rond_1"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_rond_1"
+        android:elevation="17dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_1" />
+
+    <Button
+        android:id="@+id/button_transparent"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:elevation="18dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_1"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Fleche_1"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/_5_arrow_right_2"
+        android:elevation="17dp"
+        app:layout_constraintRight_toRightOf="@+id/Button_rond_1"
+        app:layout_constraintTop_toTopOf="@+id/Button_rond_1" />
+
+    <!-- PLANTE NUMERO 2 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_plante_2"
+        android:layout_width="160dp"
+        android:layout_height="242dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="280dp"
+
+        android:background="@drawable/plante_1"
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plante_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="6.85dp"
+        android:layout_marginTop="196dp"
+
+        android:background="@drawable/houseplantcrassula"
+        android:elevation="20dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_plante_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="192dp"
+
+        android:elevation="20dp"
+        android:text="Crassula \nHouseplant"
+
+
+        android:textAppearance="@style/texte_boutton_plante"
+
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_plante_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_2"
+        />
+
+    <View
+        android:id="@+id/Button_rond_2"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_rond_1"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_2" />
+
+    <Button
+        android:id="@+id/button_transparent_2"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_2"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Fleche_2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/_5_arrow_right_2"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/Button_rond_2"
+        app:layout_constraintTop_toTopOf="@+id/Button_rond_2" />
+
+    <!-- PLANTE NUMERO 3 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_plante_3"
+        android:layout_width="160dp"
+        android:layout_height="242dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="578dp"
+
+        android:background="@drawable/plante_1"
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plante_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="520dp"
+
+        android:background="@drawable/houseplantasplenium"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_plante_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="192dp"
+
+        android:elevation="20dp"
+        android:text="Peperomia \nHouseplant"
+
+
+        android:textAppearance="@style/texte_boutton_plante"
+
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_plante_3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_3"
+        />
+
+    <View
+        android:id="@+id/Button_rond_3"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_rond_1"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_3" />
+
+    <Button
+        android:id="@+id/button_transparent_3"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_3"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Fleche_3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/_5_arrow_right_2"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/Button_rond_3"
+        app:layout_constraintTop_toTopOf="@+id/Button_rond_3" />
+
+    <!-- PLANTE NUMERO 4 -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_plante_4"
+        android:layout_width="160dp"
+        android:layout_height="242dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="578dp"
+
+        android:background="@drawable/plante_1"
+        app:cardCornerRadius="16dp"
+
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plante_4"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="526dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/image1_1"
+        android:cropToPadding="true"
+        android:elevation="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_plante_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="192dp"
+
+        android:elevation="20dp"
+        android:text="Peperomia \nHouseplant"
+
+
+        android:textAppearance="@style/texte_boutton_plante"
+
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_plante_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_4"
+        />
+
+    <View
+        android:id="@+id/Button_rond_4"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/button_rond_1"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_4" />
+
+    <Button
+        android:id="@+id/button_transparent_4"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginRight="12dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/rectangle_plante_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_plante_4"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Fleche_4"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/_5_arrow_right_2"
+        android:elevation="20dp"
+        app:layout_constraintRight_toRightOf="@+id/Button_rond_4"
+        app:layout_constraintTop_toTopOf="@+id/Button_rond_4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
