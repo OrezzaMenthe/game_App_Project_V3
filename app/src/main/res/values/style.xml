@@ -30,4 +30,10 @@
         <item name="android:fontFamily">@font/lexendmedium</item>
     </style>
 
+    <style name="textHouseplant">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#394929</item>
+        <item name="android:fontFamily">@font/lexendregular</item>
+    </style>
+
 </resources>

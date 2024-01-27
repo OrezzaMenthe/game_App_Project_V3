@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <ImageView
+        android:id="@+id/peperomia_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="47dp"
+
+        android:adjustViewBounds="true"
+        android:background="@drawable/peperomiaobtusfolia"
+
+        android:cropToPadding="true"
+        android:elevation="14dp"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hey_urvashi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/hey_urvashi"
+        android:textAppearance="@style/HeyUrvashiStyle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peperomia_o"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+
+        android:layout_marginTop="1dp"
+        android:text="@string/help_us_to_"
+        android:textAppearance="@style/help_us_to_"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hey_urvashi" />
+
+    <ImageView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="70dp"
+        android:clipToOutline="true"
+        android:src="@drawable/_6_notification"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ellipse_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="70dp"
+        android:clipToOutline="true"
+        android:src="@drawable/ellipse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="331dp"
+        android:layout_marginTop="70dp"
+
+        android:clipToOutline="true"
+        android:src="@drawable/_4_setting"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rectangle_fond"
+
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+
+        android:background="@drawable/plante_1"
+
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/Button_rond_1"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_rond_1"
+        android:elevation="17dp"
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_fond"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_fond" />
+
+    <Button
+        android:id="@+id/button_transparent_1"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:elevation="18dp"
+        app:layout_constraintLeft_toLeftOf="@+id/rectangle_fond"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_fond"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Fleche_1"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:rotation="180"
+        android:background="@drawable/_5_arrow_right_2"
+        android:elevation="17dp"
+        app:layout_constraintRight_toRightOf="@+id/Button_rond_1"
+        app:layout_constraintTop_toTopOf="@+id/Button_rond_1" />
+
+    <ImageView
+        android:id="@+id/plante_1"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/houseplantpeperomia"
+        android:elevation="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_fond" />
+
+    <TextView
+        android:id="@+id/textHouseplant"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:elevation="15dp"
+        android:gravity="fill_horizontal"
+        android:lineSpacingMultiplier="1.1"
+        android:text="@string/textHouseplant"
+        android:textAppearance="@style/textHouseplant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plante_1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:id="@+id/main_activity_container">
+    tools:context=".MainActivity2">
 
-
-<ImageView
+    <ImageView
         android:id="@+id/peperomia_o"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -102,11 +100,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/texte_boutton_houseplant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:text="Houseplants"
+        android:textAppearance="@style/evergreen"
+
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        android:elevation="10dp"
+        />
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/button"
-        android:layout_width="112dp"
+        android:id="@+id/button_white"
+        android:layout_width="120dp"
         android:layout_height="34dp"
-        android:layout_marginLeft="7dp"
+        android:layout_marginLeft="125dp"
         android:layout_marginTop="6dp"
         android:background="@drawable/rounded_button_1"
         app:cardElevation="6dp"
@@ -115,22 +127,8 @@
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
-    <TextView
-        android:id="@+id/texte_boutton_haut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="8dp"
-        android:text="Houseplants"
-        android:textAppearance="@style/houseplant"
-
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
-        android:elevation="10dp"
-        />
-
     <Button
-        android:id="@+id/button_transparent_Houseplant"
+        android:id="@+id/button_transparent_Houseplants"
         android:layout_width="112dp"
         android:layout_height="34dp"
         android:layout_marginLeft="7dp"
@@ -144,7 +142,7 @@
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/texte_evergreen"
         android:layout_width="107dp"
         android:layout_height="18dp"
 
@@ -152,8 +150,8 @@
         android:layout_marginTop="14dp"
 
         android:text="Evergren Trees"
-        android:textAppearance="@style/evergreen"
-
+        android:textAppearance="@style/houseplant"
+        android:elevation="10dp"
         app:layout_constraintLeft_toLeftOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
@@ -171,16 +169,6 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_1"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="18dp"
-        android:text="Palm Tree"
-        android:textAppearance="@style/evergreen"
-        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
-
     <Button
         android:id="@+id/button_transparent_PalmTree"
         android:layout_width="85dp"
@@ -192,6 +180,17 @@
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/texte_palm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:text="Palm Tree"
+        android:textAppearance="@style/evergreen"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
     <!-- PLANTE NUMERO 1 -->
 
@@ -215,13 +214,13 @@
 
     <ImageView
         android:id="@+id/plante_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
 
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="-25dp"
         android:layout_marginTop="225dp"
 
-        android:background="@drawable/houseplantpeperomia"
+        android:background="@drawable/bambou"
         android:elevation="20dp"
 
 
@@ -237,7 +236,7 @@
         android:layout_marginTop="192dp"
 
         android:elevation="20dp"
-        android:text="Peperomia \nHouseplant"
+        android:text="Wanning \nBambou Tree"
 
 
         android:textAppearance="@style/texte_boutton_plante"
@@ -258,7 +257,7 @@
         app:layout_constraintTop_toTopOf="@+id/rectangle_plante_1" />
 
     <Button
-        android:id="@+id/button_transparent_1"
+        android:id="@+id/button_transparent"
         android:layout_width="28dp"
         android:layout_height="27dp"
         android:layout_marginTop="193dp"
@@ -300,13 +299,13 @@
 
     <ImageView
         android:id="@+id/plante_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="240dp"
 
-        android:layout_marginRight="6.85dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginRight="-25dp"
+        android:layout_marginTop="225dp"
 
-        android:background="@drawable/houseplantcrassula"
+        android:background="@drawable/longifolia"
         android:elevation="20dp"
 
 
@@ -322,7 +321,7 @@
         android:layout_marginTop="192dp"
 
         android:elevation="20dp"
-        android:text="Crassula \nHouseplant"
+        android:text="Yulin \nLongifolia Tree"
 
 
         android:textAppearance="@style/texte_boutton_plante"
@@ -385,13 +384,13 @@
 
     <ImageView
         android:id="@+id/plante_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="230dp"
 
-        android:layout_marginLeft="13dp"
+        android:layout_marginLeft="-20dp"
         android:layout_marginTop="520dp"
 
-        android:background="@drawable/houseplantasplenium"
+        android:background="@drawable/lemon"
         android:elevation="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -405,7 +404,7 @@
         android:layout_marginTop="192dp"
 
         android:elevation="20dp"
-        android:text="Peperomia \nHouseplant"
+        android:text="Huining \nLemon Tree"
 
 
         android:textAppearance="@style/texte_boutton_plante"
@@ -468,18 +467,18 @@
 
     <ImageView
         android:id="@+id/plante_4"
-        android:layout_width="228dp"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
 
-        android:layout_marginLeft="163dp"
-        android:layout_marginTop="526dp"
+        android:layout_marginRight="-35dp"
+        android:layout_marginTop="510dp"
 
         android:adjustViewBounds="true"
-        android:background="@drawable/image1_1"
+        android:background="@drawable/podocarpus"
         android:cropToPadding="true"
         android:elevation="20dp"
         android:scaleType="centerInside"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -491,7 +490,7 @@
         android:layout_marginTop="192dp"
 
         android:elevation="20dp"
-        android:text="Crassula \nHouseplant"
+        android:text="Nadun \nPodocarpus Tree"
 
 
         android:textAppearance="@style/texte_boutton_plante"
@@ -533,6 +532,8 @@
         android:elevation="20dp"
         app:layout_constraintRight_toRightOf="@+id/Button_rond_4"
         app:layout_constraintTop_toTopOf="@+id/Button_rond_4" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
