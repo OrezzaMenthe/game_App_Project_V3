@@ -32,6 +32,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val bouton_vers_plante2 = findViewById<Button>(R.id.button_transparent_2)
+        bouton_vers_plante2.setOnClickListener {
+            val intent = Intent(this, MainActivity5::class.java)
+            startActivity(intent)
+        }
+
+        val bouton_vers_plante3 = findViewById<Button>(R.id.button_transparent_3)
+        bouton_vers_plante3.setOnClickListener {
+            val intent = Intent(this, MainActivity6::class.java)
+            startActivity(intent)
+        }
+        val bouton_vers_plante4 = findViewById<Button>(R.id.button_transparent_4)
+        bouton_vers_plante4.setOnClickListener {
+            val intent = Intent(this, MainActivity7::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }
